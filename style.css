@@ -6,8 +6,8 @@
 
 body {
     font-family: 'Helvetica Neue', sans-serif;
-    background: url('/images/fondo-limones.png') left top repeat-y, 
-                url('/images/fondo-limones.png') right top repeat-y, 
+    background: url('images/fondo-limones.png') left top repeat-y, 
+                url('images/fondo-limones.png') right top repeat-y, 
                 #e6f6fb;
     background-size: 150px auto;
     color: #222;
