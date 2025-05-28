@@ -1,0 +1,157 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background: url('/Images/Fondo-limones.png') left top repeat-y, 
+                url('/Images/Fondo-limones.png') right top repeat-y, 
+                #e6f6fb;
+    background-size: 150px auto;
+    color: #222;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #d8ecf3;
+    color: #1f2d3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid #aad4e4;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    color: #1f2d3a;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  nav a:hover {
+    background-color: #aad4e4;
+    color: #ffffff;
+  }
+  
+  main {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.92);
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  }
+  
+  .imagen-centrada {
+    display: block;
+    margin: 2rem auto;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    color: #134a68;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+    color: #24688a;
+    font-weight: 500;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #2e3d4d;
+    margin-bottom: 1rem;
+  }
+  
+  ul {
+    margin-left: 1.5rem;
+    color: #444;
+  }
+  
+  ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .layout-dos-columnas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+  
+  .columna-izquierda,
+  .columna-derecha {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  footer.pie-rojo {
+    color: #e6f6fb;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+  }
+  
+  @media (max-width: 768px) {
+    .layout-dos-columnas {
+      grid-template-columns: 1fr;
+    }
+  
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+  
+    nav {
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+  
+    main {
+      padding: 1.5rem;
+      margin: 1rem;
+    }
+  }
+
+  .footer-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo-footer {
+    height: 40px;
+  }
+  
